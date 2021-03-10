@@ -9,3 +9,6 @@ my_array = np.array(my_list)
 
 print (str(my_array))
 
+x=np.array(my_array).reshape(-1,3)
+
+ptint(x)
