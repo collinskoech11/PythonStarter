@@ -24,7 +24,15 @@ quizResults = [
 ]
 
 
-print(np.array(quizResults).reshape(-1,2))
+x=np.array(quizResults).reshape(-1,2)
+
+def splitArr
+    mask    = np.array([[0,1],[0,0],[1,1],[1,0]],dtype=np.bool)
+    ma = np.a.array(x, mask=np.invert(mask))
+    
+    print ma.mask
+
+
 
 
 
