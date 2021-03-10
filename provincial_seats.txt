@@ -1,0 +1,13 @@
+Nunavut,35000,1
+Alberta,4067000,34
+Saskatchewan,1098000,14
+Yukon,35000,1
+Manitoba,1278000,14
+British Columbia,4648000,42
+Ontario,13448000,121
+Quebec,8164000,78
+Prince Edward Island,142000,4
+Newfoundland,519000,7
+Northwest Territories,41000,1
+Nova Scotia,923000,11
+New Brunswick,747000,10
