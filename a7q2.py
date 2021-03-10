@@ -1,14 +1,13 @@
 import numpy as np
 
-
 f = open("provincial_seats.txt", "r")
 lines = f.readlines()
+mylist = [line.rstrip('\n') for line in f]
 
-my_list = f
-my_array = np.array(my_list)
+myarray = np.array(mylist)
 
-print (str(my_array))
+print(myarray)
 
-x=np.array(my_array).reshape(-1,3)
-
-ptint(x)
+reshapeMyArr = np.reshape(myarray, (-1,3))
+# newArr = arr.reshape(3, 13)
+print(reshapeMyArr)
