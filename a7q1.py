@@ -1,4 +1,5 @@
-import numpy as np 
+import numpy as np
+from tabulate import tabulate
 
 quizResults = [
     [1, 0, 1, 1, 0, 1, 1, 1, 1, 1],
@@ -26,12 +27,15 @@ quizResults = [
 
 x=np.array(quizResults).reshape(-1,2)
 
-def splitArr
-    mask    = np.array([[0,1],[0,0],[1,1],[1,0]],dtype=np.bool)
-    ma = np.a.array(x, mask=np.invert(mask))
-    
-    print ma.mask
+print(x)
 
+data = np.array(x) 
+
+headers = ["0,0","0,1","1,0","1,1"]
+
+table = tabulate(data, headers, tablefmt="github")
+
+print(table)
 
 
 
