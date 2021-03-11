@@ -1,14 +1,14 @@
 import numpy as np
 
 #read data from dataset
-f = open("provincial_seats.txt", "r")
-lines = f.readlines()
+datafife = open("provincial_seats.txt", "r")
+lines = datafile.readlines()
 
 #strip data to one line
-mylist = [line.rstrip('\n') for line in f]
+mylistdata = [line.rstrip('\n') for line in datafile]
 
 #convert data into an array
-myarray = np.array(mylist)
+myarray = np.array(mylistdata)
 
 print(myarray)
 
