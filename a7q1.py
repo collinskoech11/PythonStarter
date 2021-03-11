@@ -1,3 +1,7 @@
+# Noel Wafuko
+# nww010 # 11308656
+# For Instructor Jeff Long
+
 import numpy as np
 from tabulate import tabulate
 #quiz data

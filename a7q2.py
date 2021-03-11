@@ -1,3 +1,7 @@
+# Noel Wafuko
+# nww010 # 11308656
+# For Instructor Jeff Long
+
 import numpy as np
 #read data from dataset
 datafife = open("provincial_seats.txt", "r")
