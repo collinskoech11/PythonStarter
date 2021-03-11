@@ -25,12 +25,12 @@ quizResults = [
 ]
 
 #reshape array
-x=np.array(quizResults).reshape(-1,2)
+reshapeArr=np.array(quizResults).reshape(-1,2)
 
 print(x)
 
 
-#calculate percentage 
+#map excecutable array
 data = np.array(x) 
 
 headers = ["0,0","0,1","1,0","1,1"]
@@ -40,5 +40,10 @@ table = tabulate(data, headers, tablefmt="github")
 print(table)
 
 
+#calculate percentage 
+values = set([y for row in reshapeArr for y in row])
+print([[(a==x).sum()*100.0/len(a) for x in values] for a in reshapeArr],'percent solved question 1')
 
+print([[(a==x).sum()*100.0/len(a) for x in values] for a in reshapeArr],'percent solved question 2')
 
+print([[(a==x).sum()*100.0/len(a) for x in values] for a in reshapeArr],'percent solved question 7')
