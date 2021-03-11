@@ -1,6 +1,6 @@
 import numpy as np
 from tabulate import tabulate
-
+#quiz data
 quizResults = [
     [1, 0, 1, 1, 0, 1, 1, 1, 1, 1],
     [0, 1, 1, 0, 1, 1, 0, 0, 0, 1],
@@ -24,15 +24,17 @@ quizResults = [
     [0, 0, 1, 1, 0, 1, 0, 1, 0, 1]
 ]
 
-
+#reshape array
 x=np.array(quizResults).reshape(-1,2)
 
 print(x)
 
+
+#calculate percentage 
 data = np.array(x) 
 
 headers = ["0,0","0,1","1,0","1,1"]
-
+#tabulate the data
 table = tabulate(data, headers, tablefmt="github")
 
 print(table)
