@@ -30,6 +30,8 @@ quizResults = [
 #reshape array
 reshapeArr=np.array(quizResults).reshape(-1,2)
 print(x)
+
+
 #map excecutable array
 data = np.array(x) 
 headers = ["0,0","0,1","1,0","1,1"]
