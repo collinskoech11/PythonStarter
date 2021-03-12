@@ -28,7 +28,7 @@ quizResults = [
     [0, 0, 1, 1, 0, 1, 0, 1, 0, 1]
 ]
 #reshape array
-reshapeArr=np.array(quizResults).reshape(-1,2)
+reshapeArr= np.array(quizResults).reshape(-1,2)
 print(x)
 
 

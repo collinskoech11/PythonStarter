@@ -4,10 +4,10 @@
 
 import numpy as np
 #read data from dataset
-datafife = open("provincial_seats.txt", "r")
-lines = datafile.readlines()
+f = open("provincial_seats.txt", "r")
+lines = f.readlines()
 #strip data to one line
-mylistdata = [line.rstrip('\n') for line in datafile]
+mylistdata = [line.rstrip('\n') for line in f]
 #convert data into an array
 myarray = np.array(mylistdata)
 print(myarray)
@@ -24,7 +24,7 @@ for i in range(0, len(test_list)) :
 res = sum(res_list) 
   
 # printing resultant list  
-print ("Total Canadian Population : " + str(res))
+print ("Total Canadian Population : " , str(res))
 
 print('Based on population, the following provinces are over-represented :')
 
@@ -36,5 +36,5 @@ array2 = [int(list_data[i]) for i in range(len(list_data)) if i % 2 != 0]
 
 
 #Print Overrepresented and Underrepresentes Provinces
-print('Over Represented provinces :' , array1)
-print('Over Underrepresented provinces :' , array2)
+print('Over Represented provinces : \n' , array1)
+print('Over Underrepresented provinces : \n' , array2)
